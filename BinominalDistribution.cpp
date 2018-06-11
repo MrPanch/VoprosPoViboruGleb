@@ -31,8 +31,8 @@ double BinominalDistribution::factorial(int n) {
 double BinominalDistribution::power (double base, int st) {
     if (base == 0) return 0;
     if (base == 1) return 1;
-    double result(1);
-    for ( int i = 1 ; i <= st; i++)
+    double result(base);
+    for ( int i = 2 ; i <= st; i++)
     {
         result = result * base;
     }
